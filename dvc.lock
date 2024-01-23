@@ -1,0 +1,10 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: d:/GitHubProjects/mlops-journey/mlopsenv/Scripts/python.exe src/train.py
+    params:
+      src/params/params.yaml:
+        train:
+          epochs: 20
+          n_estimators: 10
+          max_depth: 6

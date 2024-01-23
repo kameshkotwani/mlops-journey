@@ -1,4 +1,4 @@
 train:
-  epochs: 20
+  epochs: 35
   n_estimators: 10
   max_depth: 6

@@ -5,7 +5,7 @@ import yaml
 
 
 with Live(save_dvc_exp=True) as live:
-    train_params = yaml.safe_load(open("src\params\params.yaml"))['train']
+    train_params = yaml.safe_load(open("params.yaml"))['train']
     epochs = train_params['epochs']
     live.log_param("epochs", epochs)
     for epoch in range(epochs):

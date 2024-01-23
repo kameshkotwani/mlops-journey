@@ -1,3 +1,8 @@
+stages:
+  train:
+    cmd: d:/GitHubProjects/mlops-journey/mlopsenv/Scripts/python.exe src/train.py
+    params:
+    - params.yaml:
 params:
 - dvclive/params.yaml
 metrics:
@@ -5,8 +10,3 @@ metrics:
 plots:
 - dvclive/plots/metrics:
     x: step
-stages:
-  train:
-    cmd: d:/GitHubProjects/mlops-journey/mlopsenv/Scripts/python.exe src/train.py
-    params:
-    - params.yaml:
